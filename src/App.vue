@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <div class="row">
+      <div class="col-6">
+        <img alt="Vue logo" class="vuelogo img-fluid" src="./assets/logo.png">
+      </div>
+      <div class="col-6 align-self-center">
+        <h1>Vue vakantiekiezer</h1>
+      </div>
+    </div>
+
+    <VacationPicker />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import VacationPicker from './components/VacationPicker.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    VacationPicker
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<!--<style>
+  .vuelogo {
+    height: 10%;
+  }
+</style>-->
